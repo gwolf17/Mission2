@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <!--Link to bootstrap css-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--Link to my css page-->
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <!--Link to image icon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <h2>Gillian Wolfersberger</h2>
+    <!--Hiking picture-->
+    <img height="240" src="img/20220107_151249.jpg" />
+
+    <!--Paragraph about what I want to get out of this class-->
+    <p>
+        Through taking this class, I hope to learn more about and be able to program using ASP.NET.<br />
+        I hope to create some awesome web applications with the skills I gain.
+    </p>
+    <br />
+
+    <!--Top 3 jobs that sound the most interesting to me-->
+    <h3>List of Top 3 Jobs:</h3>
+    <ol>
+        <li>Software Engineer</li>
+        <li>Web Developer</li>
+        <li>Data Analyst</li>
+    </ol>
+    <br />
+
+    <!--Form that gathers the % received in each category and then returns overall % and letter grade when submitted-->
+    <h3>Grade Calculator</h3>
+    <form>
+        <label>Assignments:</label>
+        <input id="assignments" type="number" /><br />
+        <label>Group Project:</label>
+        <input id="groupProject" type="number" /><br />
+        <label>Quizzes:</label>
+        <input id="quizzes" type="number" /><br />
+        <label>Exams:</label>
+        <input id="exams" type="number" /><br />
+        <label>INTEX:</label>
+        <input id="intex" type="number" /><br />
+        <button type="button" id="btn">Submit</button>
+    </form>
+
+    <!--Link to js portion of bootstrap-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--Link to jquery library-->
+    <script src="lib/jquery/jquery-3.6.0.min.js"></script>
+    <!--Link to javascript page to calculate grade-->
+    <script src="js/Calculate.js"></script>
+</body>
+</html>
