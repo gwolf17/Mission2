@@ -5,8 +5,8 @@ var letterGrade;
 //Function that calculates final grade % and final letter grade when the button on the index page is clicked
 $("#btn").click(function () {
     //Add up inputs to get total % grade
-    grade = parseInt($("#assignments").val()) + parseInt($("#groupProject").val())
-        + parseInt($("#quizzes").val()) + parseInt($("#exams").val()) + parseInt($("#intex").val())
+    grade = (parseInt($("#assignments").val()) * .55) + (parseInt($("#groupProject").val()) * .05)
+        + (parseInt($("#quizzes").val()) * .1) + (parseInt($("#exams").val()) * .2) + (parseInt($("#intex").val()) * .1)
     //Determine letter grade
     if (grade >= 94) {
         letterGrade = 'A'
@@ -34,5 +34,5 @@ $("#btn").click(function () {
         letterGrade = 'E'
     }
     //Output results
-    alert("Grade Percentage: " + grade + "%\n" + "Letter Grade: " + letterGrade)
+    alert("Grade Percentage: " + grade.tofixed(2) + "%\n" + "Letter Grade: " + letterGrade)
 })
